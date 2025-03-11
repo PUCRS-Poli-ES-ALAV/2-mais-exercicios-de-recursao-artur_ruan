@@ -1,0 +1,15 @@
+exercicio 2
+
+somatorio ate parâmetro n
+
+modelagem:
+1. int somatorio (int n) → retorna somatório de 0 até n
+2. não tem erro
+3. n=0 retorna 0
+4. n = 3 → 3 + ( 2 + (1 + (0)))
+
+implementação:
+public int somatorio (int n) {
+	if(n=0) return 0;
+	return n + somatorio(n-1);
+}

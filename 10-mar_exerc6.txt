@@ -1,0 +1,21 @@
+exercicio 6
+
+inteiro >= 0 pra binário
+
+modelagem:
+1. String binary (int n) → retorna o binário (string)
+2. erro: n < 0
+3. n=0 retorna 0 e n=1 retorna 1
+4. se n%2 for 0, adiciona 0 a esquerda, senão adiciona 1 a esquerda. 
+
+implementação:
+
+public static String binary(int n) {
+        if (n < 0)
+            return "Invalid input";
+        if (n == 0)
+            return "0";
+        if (n == 1)
+            return "1";
+        return binary(n / 2) + n % 2;
+    }

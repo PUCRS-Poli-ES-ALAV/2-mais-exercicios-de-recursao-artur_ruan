@@ -1,0 +1,26 @@
+exercicio 4
+
+somatorio entre 2 numeros
+
+modelagem:
+1. int somatorio (int m, int n) → retorna somatório de m até n
+2. não tem erro
+3. m=n retorna n
+4. m=1 e n = 3 → 1 + 2 + 3
+
+implementação:
+
+    public static int somatorio2(int m, int n) {
+        if (m <= n)
+            return somatorio(m, n);
+        int aux = n;
+        n = m;
+        m = aux;
+        return somatorio(m, n);
+    }
+
+    private static int somatorio(int m, int n) {
+        if (m == n)
+            return n;
+        return m + somatorio(m + 1, n);
+    }
