@@ -1,4 +1,4 @@
-# Exercícios de recursão adicional
+# Exercícios de recursão adicional - Ruan Necker e Artur Kalil
 
 Modele as recursões, e depois implemente cada um dos algorítmos modelados.
 Faça uma classe contendo os métodos implementados. Coloque a modelagem como comentário antes de cada método.
